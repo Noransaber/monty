@@ -11,7 +11,7 @@ void init_args(void)
 
 	args->instruction = malloc(sizeof(instruction_t));
 	if (args->instruction == NULL)
-		melloc_error();
+		malloc_error();
 
 	args->stream = NULL;
 	args->line = NULL;

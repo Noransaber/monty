@@ -19,9 +19,9 @@ void get_instruc(void)
 		{"push", &push}, {"pop", &pop},
 		{"pint", &pint}, {"swap", &swap},
 		{"nop", &nop}, {"add", &add},
-		{"pall", &pall}
+		{"pall", &pall},
 		{NULL. NULL}
-	}
+	};
 	if (args->n_tokens == 0)
 		return;
 	if (args->tokens[0][0] == '#')

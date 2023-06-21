@@ -11,13 +11,13 @@ strcpy(cpy, args->line);
 args->n_tokens = 0;
 token = strtok(cpy, delime);
 
-while(token)
+while (token)
 {
 args->n_tokens += 1;
-token = strtok(NULL, delime)
+token = strtok(NULL, delime);
 }
-args->tokens = malloc(sizeof(zhar *) *
-	       (args->n_tokens + 1));	
+args->tokens = malloc(sizeof(char *) *
+	       (args->n_tokens + 1));
 
 strcpy(cpy, args->line);
 token = strtok(cpy, delime);

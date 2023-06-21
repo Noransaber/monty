@@ -1,5 +1,5 @@
 #include "monty.h"
-arg_t args = NULL;
+arg_t *args = NULL;
 
 /**
  * main - Enter point to the program
@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 	size_t f = 0;
 
 	valid_args(argc);/*check for vaild num of args*/
-	intit_args();/*init args*/
+	 init_args();/*init args*/
 	getting_stream(argv[1]);/*open the file in read mode*/
 
 

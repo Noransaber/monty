@@ -12,7 +12,7 @@ void pop(stack_t **stack, unsigned int line_num)
 
 	if (args->head == NULL)
 	{
-i		dprintf(2, "L%d: can't pop an empty stack\n", line_num);
+		dprintf(2, "L%d: can't pop an empty stack\n", line_num);
 		args_freedom();
 		exit(EXIT_FAILURE);
 	}

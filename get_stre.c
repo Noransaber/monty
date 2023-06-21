@@ -12,7 +12,7 @@ void stream_failer(char *filename)
 }
 
 /**
- * get_stream - open file to read
+ * getting_stream - open file to read
  * @filename: path nam to the file
  * Return: VOID
  **/
