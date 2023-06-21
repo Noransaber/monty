@@ -8,7 +8,7 @@ void push(stack_t **stack, unsigned int line_num)
 {
 	if (args->n_tokens <= 1 || !(are_nums(args->tokens[1])))
 	{
-		args_freedom();
+		free_args();
 		dprintf(2, "L%d: usage: push integer\n", line_num);
 		exit(EXIT_FAILURE);
 	}

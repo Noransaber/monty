@@ -1,5 +1,13 @@
 #include "monty.h"
-
+/**
+ * free_h - Remove the memo for the head
+ **/
+void free_h(void)
+{
+        if (args->head)
+                free_S(args->head);
+        args->head = NULL;
+}
 /**
 * free_args - Remove memo for all ptr args
 */
@@ -23,15 +31,3 @@ void free_args(void)
 	}
 	free(args);
 }
-
-/**
- * free_h - Remove the memo for the head
- **/
-void free_h(void)
-{
-	if (args->head)
-		free_S(args->head);
-	args->head = NULL;
-}
-
-

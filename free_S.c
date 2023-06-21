@@ -11,7 +11,7 @@ void free_S(stack_t *head)
 
 	if (head->next != NULL)
 	{
-		free(head->next);
+		free_S(head->next);
 	}
 	free(head);
 }
