@@ -4,7 +4,7 @@
 * free_args - Remove memo for all ptr args
 */
 
-void free_args()
+void free_args(void)
 {
 	if (args == NULL)
 		return;
