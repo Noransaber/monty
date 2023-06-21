@@ -17,7 +17,7 @@ void stream_failer(char *filename)
  * Return: VOID
  **/
 
-void get_stream(char *filename)
+void getting_stream(char *filename)
 {
 	int fd;
 

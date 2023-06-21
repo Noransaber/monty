@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 
 	valid_args(argc);/*check for vaild num of args*/
 	intit_args();/*init args*/
-	get_stream(argv[1]);/*open the file in read mode*/
+	getting_stream(argv[1]);/*open the file in read mode*/
 
 
 	while (getline(&args->line, &f, args->stream) != -1)
