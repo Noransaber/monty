@@ -19,7 +19,7 @@ void get_instruc(void)
 		{"push", &push}, {"pall", &pall},
 		{"pint", &pint},{"pop", &pop},
 		{"swap", &swap}, {"add", &add},
-		{"nop", &nop}. {NULL, NULL}
+		{"nop", &nop}, {NULL, NULL}
 	};
 	if (args->n_tokens == 0)
 		return;
