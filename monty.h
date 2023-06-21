@@ -88,7 +88,7 @@ void pint(stack_t **stack, unsigned int line_num);
 void pall(stack_t **stack, unsigned int line_num);
 void nop(stack_t **stack, unsigned int line_num);
 void add(stack_t **stack, unsigned int line_num);
-
+void push(stack_t **stack, unsigned int line_num);
 /*HELPER FUNCTIONS*/
 void valid_args(int argc);
 void del_node(void);
