@@ -6,26 +6,28 @@
  **/
 void push(stack_t **stack, unsigned int line_num)
 {
+	stack_t *newN;
+	(void) stack;
 	if (args->n_tokens <= 1 || !(are_nums(args->tokens[1])))
 	{
 		args_freedom();
 		dprintf(2, "L%d: usage: push integer\n", line_num);
 		exit(EXIT_FAILURE);
 	}
-	*stack = malloc(sizeof(stack_t));
-	if (*stack == NULL)
+	newN = malloc(sizeof(stack_t));
+	if (newN == NULL)
 		malloc_error();
-	(*stack)->next = (*stack)->prev = NULL;
-	(*stack)->n = (int) atoi(args->tokens[1]);
+	newN->next = newN->prev = NULL;
+	newN->n = (int) atoi(args->tokens[1]);
 	if (args->head == NULL)
-		args->head = *stack;
+		args->head = newN;
 	else
 	{
 		if (args->stack)
 		{
-			(*stack)->next = args->head;
-			args->head->prev = *stack;
-			args->head = *stack;
+			newN->next = args->head;
+			args->head->prev = newN;
+			args->head = newN;
 		}
 		else
 		{
@@ -33,9 +35,9 @@ void push(stack_t **stack, unsigned int line_num)
 
 			while (nodeT->next)
 				nodeT = nodeT->next;
-			nodeT->next = *stack;
-			(*stack(->prev = nodeT;
+			nodeT->next = newN;
+			newN->prev = nodeT;
 		}
 	}
-				args->stack+len += 1;
+				args->stack_len += 1;
 }

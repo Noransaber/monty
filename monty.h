@@ -97,6 +97,7 @@ void run(void);
 void init_args(void);
 void get_instruc(void);
 void getting_stream(char *fileName);
+int are_nums(char *s);
 
 /*OTHERS*/
 int dprintf(int fd, const char *format, ...);
