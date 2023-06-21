@@ -16,11 +16,10 @@ void get_instruc(void)
 {
 	int z = 0;
 	instruction_t instructions[] = {
-		{"push", &push}, {"pop", &pop},
-		{"pint", &pint}, {"swap", &swap},
-		{"nop", &nop}, {"add", &add},
-		{"pall", &pall},
-		{NULL, NULL}
+		{"push", &push}, {"pall", &pall},
+		{"pint", &pint},{"pop", &pop},
+		{"swap", &swap}, {"add", &add},
+		{"nop", &nop}. {NULL, NULL}
 	};
 	if (args->n_tokens == 0)
 		return;
