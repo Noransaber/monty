@@ -17,9 +17,9 @@ void g_ins(void)
 {
 	int g = 0;
 	instruction_t ins[] = {
-		{"push", &my_push}, {"pop", &pop},
+		{"push", &push}, {"pop", &pop},
 		{"pint", &pint}, {"swap", &swap},
-		{"nop", &nop}, {"add", &add},
+		{"nop", &nop}, {"add", &add_monty},
 		{"pall", &pall},
 		{NULL, NULL}
 	};
@@ -31,7 +31,7 @@ void g_ins(void)
 		args->ins->f = nop;
 		return;
 	}
-	for (; ins[g], opcode != NULL; g++)
+	for (; ins[g].opcode != NULL; g++)
 	{
 		if (strcmp(ins[g].opcode, args->tk[0]) == 0)
 		{

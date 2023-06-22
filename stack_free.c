@@ -9,7 +9,7 @@ void s_free(stack_t *head)
 	if (head == NULL)
 		return;
 
-	if (jhead->next != NULL)
+	if (head->next != NULL)
 	{
 		s_free(head->next);
 	}

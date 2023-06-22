@@ -9,7 +9,7 @@ void add_monty(stack_t **stack, unsigned int l_n)
 	stack_t *n1, *n2;
 
 	(void) stack;
-	if (args->s_l < 2)
+	if (args->stack_l < 2)
 	{
 		dprintf(2, "L%d: can't add, stack too short\n", l_n);
 		all_free();
@@ -18,7 +18,7 @@ void add_monty(stack_t **stack, unsigned int l_n)
 	n1 = args->head;
 	n2 = n1->next;
 
-	n2 = n1->n + n2->n;
+	n2->n = n1->n + n2->n;
 	del();
-	args->s_l -= 1;
+	args->stack_l -= 1;
 }

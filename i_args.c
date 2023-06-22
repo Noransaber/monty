@@ -6,7 +6,7 @@
 void i_args(void)
 {
 	args  = malloc(sizeof(arg_t));
-	if (arg == NULL)
+	if (args == NULL)
 		malloc_m();
 
 	args->ins = malloc(sizeof(instruction_t));

@@ -18,7 +18,7 @@ void g_s(char *filename)
 {
 	int fd;
 
-	fd = open(filename, O_RDOLNY);
+	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		gs_messgae(filename);
 

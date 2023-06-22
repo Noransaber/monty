@@ -13,17 +13,17 @@ int main(int agc, char **agv)
 
 	v_args(agc);
 	i_args();
-	g_f(agv[1]);
+	g_s(agv[1]);
 
-	while (getline(&args->l, &z, args->fl) != -1)
+	while (getline(&args->l, &z, args->s) != -1)
 	{
 		args->l_n += 1;
 		tokenizer();
-		get_in();
+		g_ins();
 		run();
 		free_tok();
 	}
 	c_file();
-	free_args();
+	ags_free();
 	return (0);
 }
