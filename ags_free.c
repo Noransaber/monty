@@ -15,7 +15,7 @@ void h_free(void)
  **/
 void ags_free(void)
 {
-	if (ags == NULL)
+	if (args == NULL)
 		return;
 
 	if (args->ins)

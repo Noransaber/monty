@@ -5,7 +5,7 @@
  */
 void c_file(void)
 {
-	if (args ==NULL)
+	if (args == NULL)
 		return;
 	fclose(args->s);
 	args->s = NULL;
